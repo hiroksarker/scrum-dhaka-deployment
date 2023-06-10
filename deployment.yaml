@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  agilebd2023
+  name:  scrum-dhaka-hirok
   namespace: demo
 spec:
   selector:
     matchLabels:
-      app: agilebd2023
+      app: scrum-dhaka-hirok
   template:
     metadata:
       labels:
-        app: agilebd2023
+        app: scrum-dhaka-hirok
     spec:
       containers:
-        - name: agilebd2023
+        - name: scrum-dhaka-hirok
           image: hiroksarker/scrum-dhaka:latest
           imagePullPolicy: Always
           ports:
